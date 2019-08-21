@@ -1,25 +1,15 @@
 package cn.edu.fudan.selab.abilitykg.Domain;
 
-import java.util.List;
-
-public class Process {
+public class ProcessDTO {
 
     private int processId;
-    private List<Action> actions;
-
-    public List<Action> getActions() {
-        return actions;
-    }
-
-    public void setActions(List<Action> actions) {
-        this.actions = actions;
-    }
+    private String actionList;
 
     @Override
     public String toString() {
-        return "Process{" +
+        return "ProcessDTO{" +
                 "processId=" + processId +
-                ", actions=" + actions +
+                ", actionList='" + actionList + '\'' +
                 '}';
     }
 
@@ -27,7 +17,15 @@ public class Process {
         this.processId = processId;
     }
 
+    public void setActionList(String actionList) {
+        this.actionList = actionList;
+    }
+
     public int getProcessId() {
         return processId;
+    }
+
+    public String getActionList() {
+        return actionList;
     }
 }

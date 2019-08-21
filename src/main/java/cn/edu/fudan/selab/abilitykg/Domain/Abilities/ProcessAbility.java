@@ -1,4 +1,4 @@
 package cn.edu.fudan.selab.abilitykg.Domain.Abilities;
 
-public class Process {
+public class ProcessAbility {
 }

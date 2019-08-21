@@ -5,6 +5,6 @@ public enum InformationType {
     WORD,
     SOUND,
     IMAGE,
-    VEDIO;
+    VIDEO;
 
 }

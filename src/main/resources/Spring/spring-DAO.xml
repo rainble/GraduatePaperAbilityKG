@@ -29,7 +29,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
-        <property name="typeAliasesPackage" value="cn.edu.fudan.selab.pojo"/>
+        <property name="typeAliasesPackage" value="cn.edu.fudan.selab.abilitykg.Domain"/>
         <property name="mapperLocations" value="classpath:Mapping/*.xml"/>
     </bean>
 
@@ -37,7 +37,7 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <!--在DAO里不用显式的声明bean也可以被注入了-->
-        <property name="basePackage" value="cn.edu.fudan.selab.DAO"/>
+        <property name="basePackage" value="cn.edu.fudan.selab.abilitykg.DAO"/>
     </bean>
 
 </beans>

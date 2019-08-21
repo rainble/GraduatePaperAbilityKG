@@ -14,11 +14,8 @@ import java.util.Queue;
 public class KGService {
 
     public Location askKGForNearLocation(Location location) {
+        return new Location();
 
-        Location result = new Location(location.getLabel());
-
-
-        return result;
     }
 
     public Entity askKGForEntityByAbilityAndLocation(Ability ability, Queue<Location> location) throws Exception {

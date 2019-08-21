@@ -1,7 +1,10 @@
 package cn.edu.fudan.selab.abilitykg.DAO;
 
-public class EntityDAO {
+import org.apache.ibatis.annotations.Param;
 
+public interface EntityDAO {
+
+    public String queryCallUrlById(@Param("entityId")int entityId);
 
 
 }

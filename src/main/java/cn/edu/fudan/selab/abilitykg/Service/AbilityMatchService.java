@@ -16,8 +16,6 @@ public class AbilityMatchService {
 
 
 
-
-
     public List<Ability> askWarehouseForAbilities(Process process) {
 
         List<Ability> abilityList = new ArrayList<Ability>();

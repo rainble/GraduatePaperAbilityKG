@@ -4,11 +4,31 @@ import cn.edu.fudan.selab.abilitykg.Enmu.AbilityType;
 
 import java.util.List;
 
-public class Ability {
+public enum  Ability {
 
-    private AbilityType ability;
-    private Location location;
-    private List<Location> range;
+    COMPUTE("compute"),
+    DISPLAY("display"),
+    EXECUTE("execute"),
+    INTERACT("interact"),
+    LOADING("loading"),
+    PERCEIVE("perceive"),
+    PROCESS("process"),
+    PROVIDE("provide"),
+    STORAGE("storage"),
+    TRANSFER("transfer");
 
+    private String ability;
 
+    Ability(String ability) {
+        this.ability = ability;
+    }
+
+    public String getAbility() {
+        return ability;
+    }
+
+    @Override
+    public String toString() {
+        return ability;
+    }
 }
